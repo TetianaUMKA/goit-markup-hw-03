@@ -1,5 +1,6 @@
 /* common css */
 
+
 :root {
     --accent-color: #2196F3;
     --main-color-text: #212121;
@@ -19,6 +20,38 @@ body {
     background-color: var(--main-color-bg);
     color: var(--secondary-color-text)
 }
+
+/* reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* ----- */
 
 .logo {
     font-family: 'Raleway';
