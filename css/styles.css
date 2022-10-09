@@ -37,12 +37,9 @@ ol {
     margin: 0;
     padding-left: 0;
 }
-
-button {
-    cursor: pointer;
-}
-
+/* address не потрібно */
 address {
+    margin-top: 20px;
     font-style: normal;
 }
 
@@ -52,6 +49,13 @@ img {
     height: auto;
 }
 /* ----- */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 
 .logo {
     font-family: 'Raleway';
@@ -91,12 +95,21 @@ a {
 }
 
 button {
+    display: inline-block;
+    border-radius: 4px;
     font-family: inherit;
     cursor: pointer;
     border: transparent;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 /* site nav */
+
 
 .link {
     font-style: normal;
@@ -106,7 +119,22 @@ button {
     letter-spacing: 0.02em;
 }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: var(--logo-color-text);
 }
 
@@ -118,6 +146,22 @@ button {
 .site-nav .link.current {
     color: var(--accent-color);
 } 
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts .item {
+    margin-right: 50px;
+}
+
+.header-contacts .item:last-child {
+    margin-right: 0;
+}
 
 .header-contacts .contacts {
     font-style: normal;
@@ -133,11 +177,13 @@ button {
 }
 
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-color-bg);
 }
 
+
 .footer-contacts .address {
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -151,7 +197,7 @@ footer {
 
 .footer-contacts .mailo,
 .footer-contacts .tel {
-    font-style: normal;
+    margin-top: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -171,21 +217,29 @@ footer {
 /* index.html css */
 
 .hero {
+    padding: 200px 0;
+    text-align: center;
     background-color: var(--footer-color-bg);
 }
 
+.container.center {
+    max-width: 696px;
+}
+
 .hero-title {
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--white-color-text);
 }
 
 .hero-button {
+    padding: 10px 32px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -201,7 +255,13 @@ footer {
     background-color: var(--active-button);
 }
 
+.section-feutures {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -212,6 +272,7 @@ footer {
 }
 
 .feutures-list .title {
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -232,10 +293,13 @@ footer {
 }
 
 .team-member {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--main-color-bg);
 }
 
 .team-list .title {
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -255,6 +319,7 @@ footer {
 /* portfolio.html css */
 
 .filter-button {
+    padding: 6px 22px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -283,4 +348,12 @@ footer {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
+}
+
+.portfolio-card-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid var(--card-border-color);
+    border-right: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
 }
