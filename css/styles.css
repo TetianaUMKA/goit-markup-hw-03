@@ -37,11 +37,6 @@ ol {
     margin: 0;
     padding-left: 0;
 }
-/* address не потрібно */
-address {
-    margin-top: 20px;
-    font-style: normal;
-}
 
 img {
     display: block;
@@ -119,8 +114,15 @@ button {
     letter-spacing: 0.02em;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .site-nav {
     display: flex;
+    margin-left: 93px;
+    
 }
 
 .site-nav .item {
@@ -133,8 +135,8 @@ button {
 
 .site-nav .link {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--logo-color-text);
 }
 
@@ -151,8 +153,13 @@ button {
     border-bottom: 1px solid #ECECEC;
 }
 
+.site-header {
+    display: flex; 
+}
+
 .header-contacts {
     display: flex;
+    margin-left: auto;
 }
 
 .header-contacts .item {
@@ -164,6 +171,9 @@ button {
 }
 
 .header-contacts .contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -182,6 +192,10 @@ footer {
     background-color: var(--footer-color-bg);
 }
 
+address {
+    margin-top: 20px;
+    font-style: normal;
+}
 
 .footer-contacts .address {
     font-size: 14px;
@@ -271,6 +285,15 @@ footer {
     color: var(--main-color-text);
 }
 
+.feutures-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feutures-list-item {
+    max-width: 270px;
+}
+
 .feutures-list .title {
     margin-bottom: 10px;
     font-style: normal;
@@ -288,11 +311,22 @@ footer {
     letter-spacing: 0.03em;
 }
 
+.presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team {
     background-color: var(--secondary-color-bg);
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-member {
+    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--main-color-bg);
@@ -300,6 +334,7 @@ footer {
 
 .team-list .title {
     margin-bottom: 10px;
+    padding-top: 30px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -310,6 +345,7 @@ footer {
 }
 
 .team-list .text {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -317,6 +353,13 @@ footer {
 }
 
 /* portfolio.html css */
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;   
+}
 
 .filter-button {
     padding: 6px 22px;
@@ -333,6 +376,16 @@ footer {
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--white-color-text);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-card {
+    width: 370px;
 }
 
 .portfolio-list .title {
