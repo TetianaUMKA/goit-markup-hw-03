@@ -162,12 +162,8 @@ button {
     margin-left: auto;
 }
 
-.header-contacts .item {
+.header-contacts .item:not(:last-child) {
     margin-right: 50px;
-}
-
-.header-contacts .item:last-child {
-    margin-right: 0;
 }
 
 .header-contacts .contacts {
@@ -236,7 +232,7 @@ address {
     background-color: var(--footer-color-bg);
 }
 
-.container.center {
+.container.hero-center {
     max-width: 696px;
 }
 
@@ -385,10 +381,11 @@ address {
 }
 
 .portfolio-card {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
 }
 
 .portfolio-list .title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -404,8 +401,7 @@ address {
 }
 
 .portfolio-card-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
     border-left: 1px solid var(--card-border-color);
     border-right: 1px solid var(--card-border-color);
     border-bottom: 1px solid var(--card-border-color);
