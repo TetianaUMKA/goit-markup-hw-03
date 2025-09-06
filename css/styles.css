@@ -55,21 +55,6 @@ img {
   padding-right: 15px;
 }
 
-.hero-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: #4d5ae5;
-  color: #fff;
-  cursor: pointer;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #404bbf;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -78,6 +63,10 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .logo-accent {
@@ -129,6 +118,21 @@ img {
   text-align: center;
 }
 
+.hero-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,6 +152,12 @@ img {
 
 .team-item {
   background-color: #fff;
+}
+
+.portfolio-item-text-content {
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .footer .logo-accent {
