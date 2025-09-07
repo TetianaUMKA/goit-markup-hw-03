@@ -4,6 +4,17 @@ body {
   background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 h2,
 h3 {
   color: #2e2f42;
@@ -35,6 +46,8 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -69,16 +82,36 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header .logo-accent {
   color: #2e2f42;
 }
 
+.nav {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -92,6 +125,11 @@ img {
 
 .address {
   font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -110,7 +148,14 @@ img {
   background-color: #2e2f42;
 }
 
+.hero-content {
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hero-title {
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -119,12 +164,18 @@ img {
 }
 
 .hero-button {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #fff;
+  border: transparent;
+  padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -144,6 +195,15 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item-title {
+  margin-bottom: 8px;
 }
 
 .team-section {
