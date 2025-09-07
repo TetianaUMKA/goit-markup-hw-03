@@ -93,9 +93,12 @@ img {
   color: #2e2f42;
 }
 
+.header .logo {
+  margin-right: 76px;
+}
+
 .nav {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
 
@@ -147,16 +150,15 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
-}
-
-.hero-content {
-  max-width: 496px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
+  max-width: 496px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -166,16 +168,17 @@ img {
 
 .hero-button {
   display: block;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #fff;
-  border: transparent;
+  border: none;
   padding: 16px 32px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -228,11 +231,11 @@ img {
 .team-item {
   width: calc((100% - 72px) / 4);
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-text-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -272,10 +275,6 @@ img {
   background-color: #2e2f42;
 }
 
-.footer-content {
-  max-width: 264px;
-}
-
 .footer .logo-accent {
   color: #f4f4fd;
 }
@@ -286,6 +285,7 @@ img {
 }
 
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
